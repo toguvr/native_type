@@ -1,12 +1,17 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Image} from 'react-native';
 
-import FeatherIcon from 'react-native-vector-icons/Feather';
-
+import Profile from '../pages/Profile';
+import AppointmentCreated from '../pages/AppointmentCreated';
+import CreateAppointment from '../pages/CreateAppointment';
 import Dashboard from '../pages/Dashboard';
 
-import Logo from '../assets/logo.png';
+export const routes = {
+  dashboard: 'Dashboard',
+  profile: 'Profile',
+  appointmentCreated: 'AppointmentCreated',
+  createAppointment: 'CreateAppointment',
+};
 
 const App = createStackNavigator();
 
@@ -16,42 +21,14 @@ const AppRoutes: React.FC = () => (
       headerShown: false,
       cardStyle: {backgroundColor: '#312e38'},
     }}>
-    <App.Screen name="Dashboard" component={Dashboard} />
+    <App.Screen name={routes.dashboard} component={Dashboard} />
+    <App.Screen name={routes.profile} component={Profile} />
+    <App.Screen
+      name={routes.appointmentCreated}
+      component={AppointmentCreated}
+    />
+    <App.Screen name={routes.createAppointment} component={CreateAppointment} />
   </App.Navigator>
 );
-
-// const AppRoutes: React.FC = () => (
-//   <App.Navigator
-//     screenOptions={{
-//       headerShown: true,
-//       cardStyle: { backgroundColor: '#EBEEF8' },
-//     }}
-//     initialRouteName="Dashboard"
-//   >
-//     <App.Screen
-//       options={{
-//         headerShown: true,
-//         headerTransparent: true,
-//         headerTitle: () => <Image source={Logo} />,
-//       }}
-//       name="Dashboard"
-//       component={Dashboard}
-//     />
-//     <App.Screen
-//       options={{
-//         headerTransparent: true,
-//         headerTitle: () => <Image source={Logo} />,
-//         headerBackTitleVisible: false,
-//         headerLeftContainerStyle: {
-//           marginLeft: 20,
-//         },
-
-//         headerBackImage: () => <FeatherIcon name="chevron-left" size={24} />,
-//       }}
-//       name="Cart"
-//       component={Cart}
-//     />
-//   </App.Navigator>
-// );
 
 export default AppRoutes;

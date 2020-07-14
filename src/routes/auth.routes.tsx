@@ -5,7 +5,7 @@ import {Image} from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 import Dashboard from '../pages/Dashboard';
-import Cart from '../pages/Cart';
+import Cart from '../pages/AppointmentCreated';
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 
@@ -19,7 +19,8 @@ const AuthRoutes: React.FC = () => (
     screenOptions={{
       headerShown: false,
       cardStyle: {backgroundColor: '#312e38'},
-    }}>
+    }}
+  >
     <Auth.Screen name="SignIn" component={SignIn} />
     <Auth.Screen name="SignUp" component={SignUp} />
   </App.Navigator>
