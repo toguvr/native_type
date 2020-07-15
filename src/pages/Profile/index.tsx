@@ -170,11 +170,11 @@ const SignUp: React.FC = () => {
         <Container>
           <ContainerIcon>
             <BackButton onPress={handleGoBack}>
-              <Icon name="chevron-left" color="#fff" size={26} />
+              <Icon name="chevron-left" size={26} color="#fff" />
             </BackButton>
 
             <SignOutButton onPress={handleSignOut}>
-              <Icon name="log-out" color="#fff" size={26} />
+              <Icon name="log-out" color="#fff" size={20} />
             </SignOutButton>
           </ContainerIcon>
 

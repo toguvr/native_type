@@ -33,7 +33,10 @@ export const UserAvatar = styled.Image`
 export const ContainerIcon = styled.View`
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-top: ${Platform.OS === 'ios' ? 40 : 2}px;
 `;
 
-export const SignOutButton = styled.TouchableOpacity``;
+export const SignOutButton = styled.TouchableOpacity`
+  margin-top: 40px;
+`;
