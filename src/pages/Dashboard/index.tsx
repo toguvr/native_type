@@ -31,7 +31,7 @@ export interface Provider {
 const Dashboard: React.FC = () => {
   const {navigate} = useNavigation();
 
-  const {signOut, user} = useAuth();
+  const {user} = useAuth();
 
   const [providers, setProviders] = useState<Provider>([]);
 
@@ -97,7 +97,6 @@ const Dashboard: React.FC = () => {
           </ProviderContainer>
         )}
       />
-      <Button title="Sair" onPress={signOut} />
     </Container>
   );
 };

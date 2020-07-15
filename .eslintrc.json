@@ -1,6 +1,8 @@
 {
   "env": {
-      "es6": true
+      "es6": true,
+      "browser": true,
+      "jest": true
   },
   "extends": [
       "plugin:react/recommended",
@@ -32,6 +34,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
+    "import/no-duplicates": "off",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, {
       "extensions": [".tsx"]
