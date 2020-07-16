@@ -67,12 +67,12 @@ Technologies that I used to develop this mobile client
 
 ### Requirements
 
-- Have this application's [API](https://github.com/EliasGcf/gobarber-api) running
+- Have this application's [API](https://github.com/toguvr/node_type_boilerplate) running
 
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/EliasGcf/gobarber-mobile.git && cd gobarber-mobile
+$ git clone https://github.com/toguvr/native_type.git && cd gobarber-mobile
 ```
 
 **Follow the steps below**
@@ -99,14 +99,14 @@ $ yarn ios
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork EliasGcf/gobarber-mobile
+$ gh repo fork toguvr/native_type
 ```
 
 **Follow the steps below**
 
 ```bash
 # Clone your fork
-$ git clone your-fork-url && cd gobarber-mobile
+$ git clone your-fork-url && cd native_type
 
 # Create a branch with your feature
 $ git checkout -b my-feature
