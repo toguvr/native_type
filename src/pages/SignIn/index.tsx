@@ -77,11 +77,11 @@ const SignIn: React.FC = () => {
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         enabled
-        style={{flex: 1}}
-      >
+        style={{flex: 1}}>
         <ScrollView
           contentContainerStyle={{flex: 1}}
-          keyboardShouldPersistTaps="handled">
+          keyboardShouldPersistTaps="handled"
+        >
           <Container>
             <Image source={logoImg} />
             <View>
@@ -91,7 +91,7 @@ const SignIn: React.FC = () => {
               <Input
                 name="email"
                 icon="mail"
-                placeholder="Email"
+                placeholder="E-mail"
                 autoCorrect={false}
                 autoCapitalize="none"
                 keyboardType="email-address"
@@ -114,7 +114,8 @@ const SignIn: React.FC = () => {
               <Button
                 onPress={() => {
                   formRef.current?.submitForm();
-                }}>
+                }}
+              >
                 Entrar
               </Button>
             </Form>
